@@ -1,0 +1,217 @@
+/* ****************** VARIABLES ****************** */
+/* ****************** MIXINS ****************** */
+/* ****************** FUNCTIONS ****************** */
+/* ****************** BASIC PREP ****************** */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Spartan',
+    sans-serif;
+  font-size: 15px;
+}
+
+@media (min-width: 1050px) {
+  body {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 100%;
+    padding: 100px 165px;
+  }
+}
+
+/* ****************** HEADER PART ****************** */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1050px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.header__h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #502050;
+  text-align: center;
+  margin: 80px 0 24px 0;
+}
+
+@media (min-width: 768px) {
+  .header__h1 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1050px) {
+  .header__h1 {
+    text-align: start;
+  }
+}
+
+.header__paragraph {
+  color: #937b92;
+  text-align: center;
+  margin: 5% 5% 45px 5%;
+}
+
+@media (min-width: 1050px) {
+  .header__paragraph {
+    text-align: start;
+    margin-left: 0;
+    width: 75%;
+  }
+}
+
+/* ****************** HEADER PART -- RATING ****************** */
+.header__rating {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rating__wraper {
+  padding: 15px 0 18px 0;
+  width: 90%;
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #502050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 1050px) {
+  .rating__wraper {
+    width: 82%;
+  }
+}
+
+@media (min-width: 768px) {
+  .rating__wraper {
+    flex-direction: row;
+  }
+}
+
+.rating__wraper--third {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1440px) {
+  .rating__wraper--second {
+    margin-left: 15%;
+  }
+
+  .rating__wraper--third {
+    margin-left: 30%;
+  }
+}
+
+.rating__stars {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .rating__stars {
+    margin: 0 33px 0 0;
+  }
+}
+
+.rating__stars svg {
+  margin-right: 9px;
+}
+
+/* ****************** MAIN PART ****************** */
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+@media (min-width: 1050px) {
+  .main {
+    flex-direction: row;
+  }
+}
+
+.article__section {
+  background-color: #502050;
+  padding: 38px 32px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  width: 72%;
+}
+
+@media (min-width: 1050px) {
+  .article__section {
+    margin: 0;
+  }
+
+  .article__section--first {
+    margin-right: 30px;
+  }
+
+  .article__section--second {
+    margin-right: 30px;
+    margin-top: 5%;
+  }
+
+  .article__section--third {
+    margin-top: 10%;
+  }
+}
+
+.person {
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.person__img {
+  margin-right: 22px;
+}
+
+.person__image {
+  border-radius: 50%;
+  height: 60px;
+}
+
+.person__info--name {
+  font-weight: 500;
+  color: white;
+  font-size: 15px;
+}
+
+.person__info--verify {
+  font-weight: 400;
+  color: #ee68a4;
+  font-size: 15px;
+}
+
+.person__commentar {
+  text-align: start;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
